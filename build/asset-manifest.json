@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aa581222.chunk.css",
+    "main.js": "/static/js/main.e65261a6.chunk.js",
+    "main.js.map": "/static/js/main.e65261a6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.40e11a07.js",
+    "runtime-main.js.map": "/static/js/runtime-main.40e11a07.js.map",
+    "static/css/2.838af2af.chunk.css": "/static/css/2.838af2af.chunk.css",
+    "static/js/2.e4294fe8.chunk.js": "/static/js/2.e4294fe8.chunk.js",
+    "static/js/2.e4294fe8.chunk.js.map": "/static/js/2.e4294fe8.chunk.js.map",
+    "static/js/3.30895bc8.chunk.js": "/static/js/3.30895bc8.chunk.js",
+    "static/js/3.30895bc8.chunk.js.map": "/static/js/3.30895bc8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.838af2af.chunk.css.map": "/static/css/2.838af2af.chunk.css.map",
+    "static/css/main.aa581222.chunk.css.map": "/static/css/main.aa581222.chunk.css.map",
+    "static/js/2.e4294fe8.chunk.js.LICENSE.txt": "/static/js/2.e4294fe8.chunk.js.LICENSE.txt",
+    "static/media/logo-rainbow.7b73eecd.png": "/static/media/logo-rainbow.7b73eecd.png",
+    "static/media/index.css": "/static/media/starsunset.3d22b980.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40e11a07.js",
+    "static/css/2.838af2af.chunk.css",
+    "static/js/2.e4294fe8.chunk.js",
+    "static/css/main.aa581222.chunk.css",
+    "static/js/main.e65261a6.chunk.js"
+  ]
+}
