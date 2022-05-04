@@ -12,30 +12,42 @@ import liff from '@line/liff';
 
 
 function App() {
-  //const [_lineUser, _setLineUser] = useState([])
-  liff.init({
-    liffId: '1657105643-d6PDzPYb', // Use own liffId
-  })
-    .then(() => {
-      // start to use LIFF's api
+  const [_userId, _setUserId] = useState('');
+  const [_displayName, _setDisplayName] = useState('');
+
+  function initializeLiff() {
+    liff.init({
+      liffId: '1657105643-d6PDzPYb'
     })
-    .catch((err) => {
-      console.log(err);
-    });
-  const user = liff.getProfile()
-  //_setLineUser(user);
-  console.log("userProfile :", user)
+      .then(() => {
+        // start to use LIFF's api
+        if (!liff.isLoggedIn()) {
+          alert("用戶未登入");
+          liff.login();
+        } else {
+          alert("用戶已登入");
+          liff.getProfile()
+            .then(profile => {
+              _setUserId(profile.userId);
+              _setDisplayName(profile.displayName);
+            })
+            .catch((err) => {
+              console.log('error', err);
+            });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+  initializeLiff();
 
   return (
     <BrowserRouter>
-      {user.length === 0 ?
-        <span>尚無資料</span> :
         <div>
-          <span>userId:  {user.userId}</span>
-          <span>displayName:  {user.displayName}</span>
-          <span>pictureUrl:  {user.pictureUrl}</span>
+          <span>userId:  {_userId}</span>
+          <span>displayName:  {_displayName}</span>
         </div>
-      }
 
       <Switch>
         <Route exact path="/">
