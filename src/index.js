@@ -12,11 +12,13 @@ const stubEnabled = process.env.NODE_ENV !== 'production';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LiffProvider liffId={liffId} stubEnabled={stubEnabled}>
+
     <Provider store={store}>
-      <App />
+      <LiffProvider liffId={liffId} stubEnabled={stubEnabled}>
+        <App />
+      </LiffProvider>
     </Provider>
-    </LiffProvider>
+
   </React.StrictMode>,
   document.getElementById("root")
 );
