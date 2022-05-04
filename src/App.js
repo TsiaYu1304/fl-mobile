@@ -25,7 +25,6 @@ function App() {
           alert("用戶未登入");
           liff.login();
         } else {
-          alert("用戶已登入");
           liff.getProfile()
             .then(profile => {
               _setUserId(profile.userId);
@@ -46,6 +45,7 @@ function App() {
     <BrowserRouter>
         <div>
           <span>userId:  {_userId}</span>
+          <br/>
           <span>displayName:  {_displayName}</span>
         </div>
 
