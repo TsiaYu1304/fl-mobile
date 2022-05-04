@@ -6,17 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./reducers/store";
 import { Provider } from "react-redux";
 
-import { LiffProvider } from 'react-liff';
-const liffId = process.env.REACT_APP_LINE_LIFF_ID;
-const stubEnabled = process.env.NODE_ENV !== 'production';
-
 ReactDOM.render(
   <React.StrictMode>
-    <LiffProvider liffId={liffId} stubEnabled={stubEnabled}>
     <Provider store={store}>
       <App />
     </Provider>
-    </LiffProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
