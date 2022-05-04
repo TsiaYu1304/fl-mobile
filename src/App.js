@@ -14,7 +14,7 @@ import liff from '@line/liff';
 function App() {
   //const [_lineUser, _setLineUser] = useState([])
   liff.init({
-    liffId: '1657105643-G6zMezJg', // Use own liffId
+    liffId: '1657105643-d6PDzPYb', // Use own liffId
   })
     .then(() => {
       // start to use LIFF's api
