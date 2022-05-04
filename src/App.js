@@ -22,7 +22,6 @@ function App() {
       .then(() => {
         // start to use LIFF's api
         if (!liff.isLoggedIn()) {
-          alert("用戶未登入");
           liff.login();
         } else {
           liff.getProfile()
