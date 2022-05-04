@@ -17,7 +17,7 @@ function App() {
 
   function initializeLiff() {
     liff.init({
-      liffId: '1657105643-d6PDzPYb'
+      liffId: '1657105925-Bz8QLDVn'
     })
       .then(() => {
         // start to use LIFF's api
